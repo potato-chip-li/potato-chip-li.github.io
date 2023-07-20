@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>blog创建</title>
+    <url>/2023/07/14/blog%E5%88%9B%E5%BB%BA/</url>
+    <content><![CDATA[<h3 id="打开下载好的theme下的config文件，关闭注释"><a href="#打开下载好的theme下的config文件，关闭注释" class="headerlink" title="打开下载好的theme下的config文件，关闭注释"></a>打开下载好的theme下的config文件，关闭注释</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap  # 站点地址</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat    # 公共福利</span></span><br></pre></td></tr></table></figure>
+<h3 id="用git-bash打开文件夹myblog输入"><a href="#用git-bash打开文件夹myblog输入" class="headerlink" title="用git bash打开文件夹myblog输入:"></a>用git bash打开文件夹myblog输入:</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page about                        <span class="comment"># 要与上述命名一致</span></span><br><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page schedule</span><br></pre></td></tr></table></figure>
+<p>即在source文件夹下创建了对应的md文件</p>
+]]></content>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>myfirstblog</title>
+    <url>/2023/07/11/myfirstblog/</url>
+    <content><![CDATA[<p>Hello world! This is my first blog.</p>
+<h1 id="该博客主题为hexo的next主题"><a href="#该博客主题为hexo的next主题" class="headerlink" title="该博客主题为hexo的next主题"></a>该博客主题为hexo的next主题</h1><h2 id="创建过程"><a href="#创建过程" class="headerlink" title="创建过程"></a>创建过程</h2><h3 id="下载好git-node后"><a href="#下载好git-node后" class="headerlink" title="下载好git,node后"></a>下载好git,node后</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init myblog</span><br><span class="line">$ <span class="built_in">cd</span> myblog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo s                       <span class="comment"># 查看网页</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-next  <span class="comment"># 下载主题</span></span><br></pre></td></tr></table></figure>
+<h3 id="打开config文件-修改主题"><a href="#打开config文件-修改主题" class="headerlink" title="打开config文件,修改主题"></a>打开config文件,修改主题</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机网络笔记</title>
+    <url>/2023/07/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h2><p>速率、带宽、吞吐量、时延、时延带宽积、往返时间、利用率、丢包率</p>
+<h2 id="体系结构"><a href="#体系结构" class="headerlink" title="体系结构"></a>体系结构</h2><p>应用层、运输层、网际层、网络接口层（数据链路层、物理层）</p>
+<span id="more"></span>
+<h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><h3 id="传输媒体"><a href="#传输媒体" class="headerlink" title="传输媒体"></a>传输媒体</h3><ul>
+<li>导引型传输媒体：同轴电缆、双绞线、光纤线、电力线</li>
+<li>非导引型传输媒体：无线电波、微波、红外线、可见光</li>
+</ul>
+<h3 id="传输方式"><a href="#传输方式" class="headerlink" title="传输方式"></a>传输方式</h3><ul>
+<li>串行传播、并行传播</li>
+<li>同步传播、异步传播</li>
+<li>单工通信、单双工通信、全双工通信</li>
+</ul>
+<h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><p>数字基带信号——&gt;数字信道、模拟基带信号——&gt;数字信道</p>
+<h3 id="调制"><a href="#调制" class="headerlink" title="调制"></a>调制</h3><p>数字基带信号——&gt;模拟信道、模拟基带信号——&gt;模拟信道</p>
+<h2 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h2><h3 id="差错检测"><a href="#差错检测" class="headerlink" title="差错检测"></a>差错检测</h3><p>奇偶校验、循环冗余校验CRC</p>
+<h3 id="可靠运输"><a href="#可靠运输" class="headerlink" title="可靠运输"></a>可靠运输</h3><ul>
+<li>停止-等待协议</li>
+<li>回退N帧协议</li>
+<li>选择重传协议</li>
+</ul>
+<h3 id="ppp协议（Point-to-Point-Protocol）"><a href="#ppp协议（Point-to-Point-Protocol）" class="headerlink" title="ppp协议（Point to Point Protocol）"></a>ppp协议（<em>Point to Point Protocol</em>）</h3><ul>
+<li>封装成帧</li>
+<li>链路控制协议LCP（<em>Link Control Protocol</em>）：用于建立、配置与测试数据链路的连接</li>
+<li>一套网络层控制协议NCPs：其中的每个协议支持不同的网络层协议</li>
+</ul>
+<h3 id="媒体接入控制"><a href="#媒体接入控制" class="headerlink" title="媒体接入控制"></a>媒体接入控制</h3><h4 id="静态划分信道"><a href="#静态划分信道" class="headerlink" title="静态划分信道"></a>静态划分信道</h4><p>频分复用FDM、时分复用TDM、波分复用WDM、码分复用CDM</p>
+<h4 id="动态接入控制"><a href="#动态接入控制" class="headerlink" title="动态接入控制"></a>动态接入控制</h4><ul>
+<li>受控接入（已被淘汰）</li>
+<li><ul>
+<li>集中控制、分散控制</li>
+</ul>
+</li>
+<li>随机接入</li>
+<li><ul>
+<li>CSDM&#x2F;CD协议（<em>Carrier Sense Multiple Access&#x2F;Collision Detection</em>）：总线型局域网使用</li>
+</ul>
+</li>
+<li><ul>
+<li>CSDM&#x2F;CA协议（<em>Carrier Sense Multiple Access&#x2F;Collision Avoidance</em>）：无线型局域网使用</li>
+</ul>
+</li>
+</ul>
+<h3 id="地址解析协议ARP（Address-Resolution-Protocol）"><a href="#地址解析协议ARP（Address-Resolution-Protocol）" class="headerlink" title="地址解析协议ARP（Address Resolution Protocol）"></a>地址解析协议ARP（<em>Address Resolution Protocol</em>）</h3><p>由IP地址获取MAC地址</p>
+<h3 id="以太网交换机生成树协议STP（Spanning-tree-protocol）"><a href="#以太网交换机生成树协议STP（Spanning-tree-protocol）" class="headerlink" title="以太网交换机生成树协议STP（Spanning-tree protocol）"></a>以太网交换机生成树协议STP（<em>Spanning-tree protocol</em>）</h3><p>寻找最佳路径、避免网络环路产生从而产生广播风暴</p>
+<h3 id="虚拟局域网VLAN（Virtual-Local-Area-Network）"><a href="#虚拟局域网VLAN（Virtual-Local-Area-Network）" class="headerlink" title="虚拟局域网VLAN（Virtual Local Area Network）"></a>虚拟局域网VLAN（<em>Virtual Local Area Network</em>）</h3><p>通过给交换机端口打标签来实现</p>
+<h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><h3 id="IPV4"><a href="#IPV4" class="headerlink" title="IPV4"></a>IPV4</h3><ul>
+<li>分类编制：A、B、C、D类IP地址</li>
+<li>划分子网：使用子网掩码</li>
+<li>无分类编制：例如：196.168.0.12&#x2F;16</li>
+</ul>
+<h3 id="路由选择协议（表示一类协议）"><a href="#路由选择协议（表示一类协议）" class="headerlink" title="路由选择协议（表示一类协议）"></a>路由选择协议（表示一类协议）</h3><h4 id="内部网关协议IGP（Interior-Gateway-Protocol）"><a href="#内部网关协议IGP（Interior-Gateway-Protocol）" class="headerlink" title="内部网关协议IGP（Interior Gateway Protocol）"></a>内部网关协议IGP（<em>Interior Gateway Protocol</em>）</h4><ul>
+<li>路由信息协议RIP（<em>Routing Information Protocol</em>）：<br>IGP中最先得到使用的协议之一，选择到达“距离短”的路由</li>
+<li>开放最短路径优先OSPF（<em>Open Shortest Path First</em>）：<br>为克服RIP的缺点而开发（除了考虑距离还考虑带宽），基于链路状态，使用OSPF的每个路由器会产生LSA（<em>Link State Advertisement</em>），有一个LSA（<em>Link State Database</em>）c存储LSA，基于LSDB进行最短路径SPF计算，构成各自的路由表。</li>
+</ul>
+<h4 id="外部网关协议EGP（Exterior-Gateway-Protocol）"><a href="#外部网关协议EGP（Exterior-Gateway-Protocol）" class="headerlink" title="外部网关协议EGP（Exterior Gateway Protocol）"></a>外部网关协议EGP（<em>Exterior Gateway Protocol</em>）</h4><ul>
+<li>外部网关协议BGP（<em>Border Gateway Protocol</em>）：<br>每个自治系统的管理员选择至少一个路由作为“发言人”，发言人建立TCP连接来交换路由信息，目前使用最多的EGP是BGP-4。</li>
+</ul>
+<h3 id="网际控制报文协议ICMP（Internet-Control-Message-Protocol）"><a href="#网际控制报文协议ICMP（Internet-Control-Message-Protocol）" class="headerlink" title="网际控制报文协议ICMP（Internet Control Message Protocol）"></a>网际控制报文协议ICMP（<em>Internet Control Message Protocol</em>）</h3><p>更有效的转发IP数据报和提高交互成功机会。</p>
+<h3 id="虚拟专用网VPN（Virtual-Private-Network）"><a href="#虚拟专用网VPN（Virtual-Private-Network）" class="headerlink" title="虚拟专用网VPN（Virtual Private Network）"></a>虚拟专用网VPN（<em>Virtual Private Network</em>）</h3><p>使用IP隧道技术</p>
+<h3 id="网络地址转换NAT（Network-Address-translation）"><a href="#网络地址转换NAT（Network-Address-translation）" class="headerlink" title="网络地址转换NAT（Network Address translation）"></a>网络地址转换NAT（<em>Network Address translation</em>）</h3><p>使大量内部专用地址（A类地址： 10.0.0.0–10.255.255.255 ，B类地址： 172.16.0.0–172.31.255.255 ，C类地址： 192.168.0.0–192.168.255.255）的专用网络用户共享少量外部全球地址。</p>
+<h2 id="运输层"><a href="#运输层" class="headerlink" title="运输层"></a>运输层</h2><h3 id="端口号"><a href="#端口号" class="headerlink" title="端口号"></a>端口号</h3><p>TCP&#x2F;IP体系的运输层使用端口号来区分应用层的不同应用进程，端口号使用16比特表示，取值范围0~65535</p>
+<ul>
+<li>熟知端口号：0~1023，IANA把这些端口号指派给了TCP&#x2F;IP体系中最重要的一些应用协议，例如FTP使用21&#x2F;20，HTTP使用80，DNS使用53。</li>
+<li>登记端口号：1024~49151.为没有熟知端口号的应用程序使用。使用这类端口号必须在IANA按照规定的手续登记，以防止重复。</li>
+</ul>
+<h3 id="UDP（User-Datagram-Protocol）与TCP（Transmission-Control-Protocol）对比"><a href="#UDP（User-Datagram-Protocol）与TCP（Transmission-Control-Protocol）对比" class="headerlink" title="UDP（User Datagram Protocol）与TCP（Transmission Control Protocol）对比"></a>UDP（<em>User Datagram Protocol</em>）与TCP（<em>Transmission Control Protocol</em>）对比</h3><table>
+<thead>
+<tr>
+<th>UDP</th>
+<th>TCP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无连接</td>
+<td>面向连接</td>
+</tr>
+<tr>
+<td>支持一对一，一对多，多对一和多交互通信</td>
+<td>每一条TCP连接只能有两个端点EP，只能是一对一通信</td>
+</tr>
+<tr>
+<td>对应用层交付的报文直接打包</td>
+<td>可靠传输，使用流量控制和拥塞控制</td>
+</tr>
+<tr>
+<td>首部开销小，仅八字节</td>
+<td>首部最小20字节，最大60字节</td>
+</tr>
+</tbody></table>
+<h3 id="TCP（Transmission-Control-Protocol）"><a href="#TCP（Transmission-Control-Protocol）" class="headerlink" title="TCP（Transmission Control Protocol）"></a>TCP（<em>Transmission Control Protocol</em>）</h3><h4 id="TCP的流量控制"><a href="#TCP的流量控制" class="headerlink" title="TCP的流量控制"></a>TCP的流量控制</h4><p>目的是让发送方发送速率不要过快，要让接收方来得及接收，利用以字节为单位的滑动窗口机制来实现。TCP接收方利用自己的接收窗口的大小来限制发送方发送窗口的大小，TCP发送方收到接收方的零窗口通知后，应启动持续计时器。持续计时器超时后，向接收方发送零窗口探测报文。</p>
+<h4 id="TCP的拥塞控制"><a href="#TCP的拥塞控制" class="headerlink" title="TCP的拥塞控制"></a>TCP的拥塞控制</h4><ul>
+<li>慢开始（<em>slow-start</em>）</li>
+<li>拥塞避免（<em>congestion avoidance</em>）</li>
+<li>快重传(<em>fast restransmit</em>)</li>
+<li>快恢复(<em>fast recovery</em>)</li>
+</ul>
+<h4 id="TCP的运输连接建立"><a href="#TCP的运输连接建立" class="headerlink" title="TCP的运输连接建立"></a>TCP的运输连接建立</h4><p>通过“三报文握手”建立连接</p>
+<h4 id="TCP连接释放"><a href="#TCP连接释放" class="headerlink" title="TCP连接释放"></a>TCP连接释放</h4><p>通过“四报文挥手”释放连接</p>
+<h2 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h2><h3 id="客户-x2F-服务器方式C-x2F-S方式（Client-x2F-Server）和对等方式P2P方式（Peer-to-Peer）"><a href="#客户-x2F-服务器方式C-x2F-S方式（Client-x2F-Server）和对等方式P2P方式（Peer-to-Peer）" class="headerlink" title="客户&#x2F;服务器方式C&#x2F;S方式（Client&#x2F;Server）和对等方式P2P方式（Peer-to-Peer）"></a>客户&#x2F;服务器方式C&#x2F;S方式（<em>Client&#x2F;Server</em>）和对等方式P2P方式（<em>Peer-to-Peer</em>）</h3><ul>
+<li>客户是服务请求方，服务器是服务提供方。服务器总是处于运行状态，并等待客户的服务请求。基于C&#x2F;S方式的应用服务通常是服务集中型，因为常会出现服务器计算机更不上众多客户机的请求，在C&#x2F;S应用中，常用计算机群集（或服务器场）构建一个强大的虚拟服务器。</li>
+<li>基于P2P的应用是服务分散的,它没有固定的服务请求者和服务提供者，P2P方式最突出的特性之一就是它的可扩展性，其还具有成本上的优势。</li>
+</ul>
+<h3 id="动态主机配置协议DHCP（Dynamic-Host-Configuration-Protocol）"><a href="#动态主机配置协议DHCP（Dynamic-Host-Configuration-Protocol）" class="headerlink" title="动态主机配置协议DHCP（Dynamic Host Configuration Protocol）"></a>动态主机配置协议DHCP（<em>Dynamic Host Configuration Protocol</em>）</h3><p>作用是自动配置主机的IP地址，子网掩码，默认网关，DNS服务器。每个网络都设置一个DHCP服务器会使DHCP服务器数量太多，因此现在是每一个网络至少有一个DHCP中继代理（通常是一台路由器），DHCP客户在未获取IP地址时会使用地址0.0.0.0。</p>
+<h3 id="域名系统DNS（Domain-Name-System）"><a href="#域名系统DNS（Domain-Name-System）" class="headerlink" title="域名系统DNS（Domain Name System）"></a>域名系统DNS（<em>Domain Name System</em>）</h3><p>因特网采用层次树状结构的域名结构，DNS是因特网使用的命名系统，把域名转换为IP地址，域名服务器可划为：根域名服务器，顶级域名服务器，权限域名服务器，本地域名服务器。查询方式有：递归查询，迭代查询。</p>
+<h3 id="文件传输协议FTP（File-Transfer-Protocol）"><a href="#文件传输协议FTP（File-Transfer-Protocol）" class="headerlink" title="文件传输协议FTP（File Transfer Protocol）"></a>文件传输协议FTP（<em>File Transfer Protocol</em>）</h3><p>FTP客户和服务器之间建立两个并行的TCP连接</p>
+<ul>
+<li>控制连接，在整个会话中保持打开，用于传送FTP相关控制命令。</li>
+<li>数据连接，用于文件传输，在每次文件传输时才建立，传输结束就关闭。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+</search>
