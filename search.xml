@@ -7,6 +7,9 @@
 <h3 id="用git-bash打开文件夹myblog输入"><a href="#用git-bash打开文件夹myblog输入" class="headerlink" title="用git bash打开文件夹myblog输入:"></a>用git bash打开文件夹myblog输入:</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page about                        <span class="comment"># 要与上述命名一致</span></span><br><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page schedule</span><br></pre></td></tr></table></figure>
 <p>即在source文件夹下创建了对应的md文件</p>
 ]]></content>
+      <categories>
+        <category>hexo next</category>
+      </categories>
       <tags>
         <tag>blog</tag>
       </tags>
@@ -19,6 +22,9 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-next  <span class="comment"># 下载主题</span></span><br></pre></td></tr></table></figure>
 <h3 id="打开config文件-修改主题"><a href="#打开config文件-修改主题" class="headerlink" title="打开config文件,修改主题"></a>打开config文件,修改主题</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>blog</tag>
       </tags>
@@ -136,8 +142,39 @@
 <li>数据连接，用于文件传输，在每次文件传输时才建立，传输结束就关闭。</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>blog优化-1</title>
+    <url>/2023/07/21/blog%E4%BC%98%E5%8C%96-1/</url>
+    <content><![CDATA[<h3 id="添加搜索功能"><a href="#添加搜索功能" class="headerlink" title="添加搜索功能"></a>添加搜索功能</h3><p>安装<font color="cyan" size=2>hexo-generator-searchdb</font> 插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<p>在hexo的<font color="cyan" size=2>_config.yml</font>的底部添加如下设置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: <span class="literal">true</span></span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
+<p>在next的<font color="cyan" size=2>_config.yml</font>打开搜索功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>部分浏览器不支持local search</p>
+<h3 id="添加可切换白天-x2F-黑夜模式"><a href="#添加可切换白天-x2F-黑夜模式" class="headerlink" title="添加可切换白天&#x2F;黑夜模式"></a>添加可切换白天&#x2F;黑夜模式</h3><p>安装 <font color="cyan" size=2>hexo-next-darkmode</font> 插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-next-darkmode --save</span><br></pre></td></tr></table></figure>
+<p>在 Next 主题的 <font color="cyan" size=2>_config.yml</font> 配置文件里添加以下内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Darkmode JS</span></span><br><span class="line"><span class="comment"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span></span><br><span class="line">darkmode_js:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  bottom: <span class="string">&#x27;64px&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  right: <span class="string">&#x27;unset&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  left: <span class="string">&#x27;32px&#x27;</span> <span class="comment"># default: &#x27;unset&#x27;</span></span><br><span class="line">  time: <span class="string">&#x27;0.5s&#x27;</span> <span class="comment"># default: &#x27;0.3s&#x27;</span></span><br><span class="line">  mixColor: <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  backgroundColor: <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  buttonColorDark: <span class="string">&#x27;#100f2c&#x27;</span> <span class="comment"># default: &#x27;#100f2c&#x27;</span></span><br><span class="line">  buttonColorLight: <span class="string">&#x27;#fff&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  isActivated: <span class="literal">false</span> <span class="comment"># default false</span></span><br><span class="line">  saveInCookies: <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  label: <span class="string">&#x27;🌓&#x27;</span> <span class="comment"># default: &#x27;&#x27;</span></span><br><span class="line">  autoMatchOsTheme: <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  libUrl: <span class="comment"># Set custom library cdn url for Darkmode.js</span></span><br></pre></td></tr></table></figure>
+<p>关闭原生的暗黑模式</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+      <categories>
+        <category>hexo next</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
       </tags>
   </entry>
 </search>
