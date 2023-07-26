@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>blog优化-1</title>
+    <url>/2023/07/21/blog%E4%BC%98%E5%8C%96-1/</url>
+    <content><![CDATA[<h3 id="添加搜索功能"><a href="#添加搜索功能" class="headerlink" title="添加搜索功能"></a>添加搜索功能</h3><p>安装<font color="blue" size=2>hexo-generator-searchdb</font> 插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<p>在hexo的<font color="blue" size=2>_config.yml</font>的底部添加如下设置</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
+<p>在next的<font color="blue" size=2>_config.yml</font>打开搜索功能</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>部分浏览器不支持local search</p>
+<h3 id="添加可切换白天-x2F-黑夜模式"><a href="#添加可切换白天-x2F-黑夜模式" class="headerlink" title="添加可切换白天&#x2F;黑夜模式"></a>添加可切换白天&#x2F;黑夜模式</h3><p>安装 <font color="blue" size=2>hexo-next-darkmode</font> 插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-next-darkmode --save</span><br></pre></td></tr></table></figure>
+<p>在 Next 主题的 <font color="blue" size=2>_config.yml</font> 配置文件里添加以下内容</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Darkmode JS</span></span><br><span class="line"><span class="comment"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span></span><br><span class="line"><span class="attr">darkmode_js:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">bottom:</span> <span class="string">&#x27;64px&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  <span class="attr">right:</span> <span class="string">&#x27;unset&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  <span class="attr">left:</span> <span class="string">&#x27;32px&#x27;</span> <span class="comment"># default: &#x27;unset&#x27;</span></span><br><span class="line">  <span class="attr">time:</span> <span class="string">&#x27;0.5s&#x27;</span> <span class="comment"># default: &#x27;0.3s&#x27;</span></span><br><span class="line">  <span class="attr">mixColor:</span> <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  <span class="attr">backgroundColor:</span> <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  <span class="attr">buttonColorDark:</span> <span class="string">&#x27;#100f2c&#x27;</span> <span class="comment"># default: &#x27;#100f2c&#x27;</span></span><br><span class="line">  <span class="attr">buttonColorLight:</span> <span class="string">&#x27;#fff&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  <span class="attr">isActivated:</span> <span class="literal">false</span> <span class="comment"># default false</span></span><br><span class="line">  <span class="attr">saveInCookies:</span> <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  <span class="attr">label:</span> <span class="string">&#x27;🌓&#x27;</span> <span class="comment"># default: &#x27;&#x27;</span></span><br><span class="line">  <span class="attr">autoMatchOsTheme:</span> <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  <span class="attr">libUrl:</span> <span class="comment"># Set custom library cdn url for Darkmode.js</span></span><br></pre></td></tr></table></figure>
+<p>关闭原生的暗黑模式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure>
+<h3 id="添加canvas-nest-线条动画"><a href="#添加canvas-nest-线条动画" class="headerlink" title="添加canvas_nest(线条动画)"></a>添加canvas_nest(线条动画)</h3><p> 在next的<font color="blue" size=2>_config.yml</font>文件中插入<br> <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># --------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># background settings</span></span><br><span class="line"><span class="comment"># --------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># add canvas-nest effect</span></span><br><span class="line"><span class="comment"># see detail from https://github.com/hustcc/canvas-nest.js</span></span><br><span class="line"><span class="attr">canvas_nest:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><br> 在next的<font color="blue" size=2>layout\_layout.njk</font>文件中的body中加入(40行后)<br> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.canvas_nest %&#125;  </span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&#123;%- include &#x27;_third-party/math/index.njk&#x27; -%&#125;</span><br><span class="line">&#123;%- include &#x27;_third-party/quicklink.njk&#x27; -%&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="在右上角或者左上角实现fork-me-on-github"><a href="#在右上角或者左上角实现fork-me-on-github" class="headerlink" title="在右上角或者左上角实现fork me on github"></a>在右上角或者左上角实现fork me on github</h3><p>选择样式<a href="https://link.jianshu.com/?t=https://github.com/blog/273-github-ribbons">GitHub Ribbons</a></p>
+<p>复制文本框中的代码打开next主题的layout&#x2F;下的_layout.njk文件，把代码复制到<font color="red">&lt;div class&#x3D;”headband”&gt;&lt;&#x2F;div&gt;</font>下面，代码中的href修改为自己的GitHub。</p>
+<h3 id="边框与文章边框阴影"><a href="#边框与文章边框阴影" class="headerlink" title="边框与文章边框阴影"></a>边框与文章边框阴影</h3><p>边框设置，在blog的根目录下的source文件夹下新建_data文件夹，并且新建<font color=blue size=3>styles.styl</font>,在其中输入</p>
+<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line"><span class="comment">//文章背板的颜色rgb</span></span><br><span class="line"><span class="selector-class">.main-inner</span> &gt; <span class="selector-class">.sub-menu</span>, <span class="selector-class">.main-inner</span> &gt; <span class="selector-class">.post-block</span>, <span class="selector-class">.main-inner</span> &gt; <span class="selector-class">.tabs-comment</span>, <span class="selector-class">.main-inner</span> &gt; <span class="selector-class">.comments</span>, <span class="selector-class">.main-inner</span> &gt; .pagination&#123;</span><br><span class="line">	<span class="attribute">background</span>: (<span class="number">233</span>,<span class="number">233</span>,<span class="number">233</span>,<span class="number">0.6</span>);		<span class="comment">//此处使用十六进制颜色代码，			也可以使用rgba进行调色，</span></span><br><span class="line">    							<span class="comment">//实际效果为白色透明色底板				rgba的第四参数即为透明度</span></span><br><span class="line">&#125;</span><br><span class="line">body&#123;				<span class="comment">//修改主体字体颜色</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#000</span>;		<span class="comment">//纯黑</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-title-link</span> &#123;	<span class="comment">//标题颜色</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;				<span class="comment">//首页文章标题颜色， （默认为灰辨识度不高）</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-meta-container</span> &#123;	<span class="comment">//标题下的日期颜色</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#880000</span>;				<span class="comment">//此处修改为红色，可自行调用rgb调色</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//侧边框的透明度设置</span></span><br><span class="line"><span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.7</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//菜单栏的调色</span></span><br><span class="line"><span class="selector-class">.header-inner</span> &#123;		</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.7</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//搜索框透明</span></span><br><span class="line"><span class="selector-class">.popup</span> &#123;		</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.main-inner</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0</span>);  <span class="comment">//主体背景透明</span></span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0px</span> <span class="number">40px</span> <span class="number">40px</span> <span class="number">40px</span>;  <span class="comment">//调整组件位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>边框阴影设置：打开next主题下的<font color=blue size=3>source\css_common\components\post\index.styl</font></p>
+<p><font size=1>我的文件地址：myblog\node_modules\hexo-theme-next\source\css_common\components\post\index.styl</font></p>
+<p>替换.use-motion下的.post-block为</p>
+<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line">.post-block&#123;</span><br><span class="line">      <span class="attribute">visibility</span>: hidden; </span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">60px</span>; </span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">60px</span>; </span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, <span class="number">0.8</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, <span class="number">0.8</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+        <category>next</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>blog创建</title>
     <url>/2023/07/14/blog%E5%88%9B%E5%BB%BA/</url>
     <content><![CDATA[<h3 id="打开下载好的theme下的config文件，关闭注释"><a href="#打开下载好的theme下的config文件，关闭注释" class="headerlink" title="打开下载好的theme下的config文件，关闭注释"></a>打开下载好的theme下的config文件，关闭注释</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap  # 站点地址</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat    # 公共福利</span></span><br></pre></td></tr></table></figure>
@@ -8,7 +48,8 @@
 <p>即在source文件夹下创建了对应的md文件</p>
 ]]></content>
       <categories>
-        <category>hexo next</category>
+        <category>hexo</category>
+        <category>next</category>
       </categories>
       <tags>
         <tag>blog</tag>
@@ -34,7 +75,6 @@
     <url>/2023/07/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h2><p>速率、带宽、吞吐量、时延、时延带宽积、往返时间、利用率、丢包率</p>
 <h2 id="体系结构"><a href="#体系结构" class="headerlink" title="体系结构"></a>体系结构</h2><p>应用层、运输层、网际层、网络接口层（数据链路层、物理层）</p>
-<span id="more"></span>
 <h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><h3 id="传输媒体"><a href="#传输媒体" class="headerlink" title="传输媒体"></a>传输媒体</h3><ul>
 <li>导引型传输媒体：同轴电缆、双绞线、光纤线、电力线</li>
 <li>非导引型传输媒体：无线电波、微波、红外线、可见光</li>
@@ -150,31 +190,32 @@
       </tags>
   </entry>
   <entry>
-    <title>blog优化-1</title>
-    <url>/2023/07/21/blog%E4%BC%98%E5%8C%96-1/</url>
-    <content><![CDATA[<h3 id="添加搜索功能"><a href="#添加搜索功能" class="headerlink" title="添加搜索功能"></a>添加搜索功能</h3><p>安装<font color="cyan" size=2>hexo-generator-searchdb</font> 插件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-<p>在hexo的<font color="cyan" size=2>_config.yml</font>的底部添加如下设置</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: <span class="literal">true</span></span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
-<p>在next的<font color="cyan" size=2>_config.yml</font>打开搜索功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>部分浏览器不支持local search</p>
-<h3 id="添加可切换白天-x2F-黑夜模式"><a href="#添加可切换白天-x2F-黑夜模式" class="headerlink" title="添加可切换白天&#x2F;黑夜模式"></a>添加可切换白天&#x2F;黑夜模式</h3><p>安装 <font color="cyan" size=2>hexo-next-darkmode</font> 插件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-next-darkmode --save</span><br></pre></td></tr></table></figure>
-<p>在 Next 主题的 <font color="cyan" size=2>_config.yml</font> 配置文件里添加以下内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Darkmode JS</span></span><br><span class="line"><span class="comment"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span></span><br><span class="line">darkmode_js:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  bottom: <span class="string">&#x27;64px&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  right: <span class="string">&#x27;unset&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  left: <span class="string">&#x27;32px&#x27;</span> <span class="comment"># default: &#x27;unset&#x27;</span></span><br><span class="line">  time: <span class="string">&#x27;0.5s&#x27;</span> <span class="comment"># default: &#x27;0.3s&#x27;</span></span><br><span class="line">  mixColor: <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  backgroundColor: <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  buttonColorDark: <span class="string">&#x27;#100f2c&#x27;</span> <span class="comment"># default: &#x27;#100f2c&#x27;</span></span><br><span class="line">  buttonColorLight: <span class="string">&#x27;#fff&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  isActivated: <span class="literal">false</span> <span class="comment"># default false</span></span><br><span class="line">  saveInCookies: <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  label: <span class="string">&#x27;🌓&#x27;</span> <span class="comment"># default: &#x27;&#x27;</span></span><br><span class="line">  autoMatchOsTheme: <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  libUrl: <span class="comment"># Set custom library cdn url for Darkmode.js</span></span><br></pre></td></tr></table></figure>
-<p>关闭原生的暗黑模式</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-
-
-
+    <title>测试学习</title>
+    <url>/2023/07/26/%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>用来促进鉴定软 件的正确性、完整性、安全性和质量的过程；<br>是一种实际输出与预期输出间的审核或者比较过程；<br>使用人工和自动手段来运行或测试某个系统的过程，其目的在于检验它是否满足规定的需求或是弄清预期结果与实际结果之间的差别；</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
+<li>阶段：单元测试、集成测试、系统测试、验收测试、回归测试、Alpha测试、Beta测试</li>
+<li>程序运行状态：静态测试、动态测试</li>
+<li>方法：白盒测试、黑盒测试、灰盒测试</li>
+<li>服务类型：移动端、PC端、B&#x2F;S、C&#x2F;S</li>
+<li>内容：功能测试、负载测试、压力测试、性能测试、大数据测试、易用性测试、安装测试、恢复测试、安全性测试、兼容性测试、内存泄漏测试、比较测试、可靠性测试、文档测试</li>
+</ul>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ul>
+<li>需求分析和评审</li>
+<li>编写测试计划</li>
+<li>编写测试用例并进行评审</li>
+<li>执行测试、提交bug、回归测试</li>
+<li>编写测试总结报告</li>
+</ul>
+<h2 id="测试用例的设计"><a href="#测试用例的设计" class="headerlink" title="测试用例的设计"></a>测试用例的设计</h2><p>等价类划分，边界值分析，因果图，判定表，正交表，场景法，错误分析，错误推断</p>
+<h2 id="Python包"><a href="#Python包" class="headerlink" title="Python包"></a>Python包</h2><p>selenium，appium，pytest，unitest</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>postman，JMeter，禅道</p>
 ]]></content>
       <categories>
-        <category>hexo next</category>
+        <category>笔记</category>
       </categories>
       <tags>
-        <tag>blog</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>

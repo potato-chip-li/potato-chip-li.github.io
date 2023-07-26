@@ -1,7 +1,8 @@
-https://potato-chip-li.github.io/2023/07/14/blog%E5%88%9B%E5%BB%BA/
 https://potato-chip-li.github.io/2023/07/21/blog%E4%BC%98%E5%8C%96-1/
-https://potato-chip-li.github.io/2023/07/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/
+https://potato-chip-li.github.io/2023/07/26/%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0/
+https://potato-chip-li.github.io/2023/07/14/blog%E5%88%9B%E5%BB%BA/
 https://potato-chip-li.github.io/2023/07/11/myfirstblog/
+https://potato-chip-li.github.io/2023/07/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/
 https://potato-chip-li.github.io/about/index.html
 https://potato-chip-li.github.io/schedule/index.html
 https://potato-chip-li.github.io/tags/index.html
@@ -9,6 +10,7 @@ https://potato-chip-li.github.io/categories/index.html
 https://potato-chip-li.github.io/
 https://potato-chip-li.github.io/tags/blog/
 https://potato-chip-li.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/
+https://potato-chip-li.github.io/tags/%E6%B5%8B%E8%AF%95/
 https://potato-chip-li.github.io/categories/hexo/
 https://potato-chip-li.github.io/categories/%E7%AC%94%E8%AE%B0/
-https://potato-chip-li.github.io/categories/hexo-next/
+https://potato-chip-li.github.io/categories/hexo/next/
