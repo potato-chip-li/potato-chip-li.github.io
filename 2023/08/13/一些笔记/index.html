@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-1.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-1.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-1.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"potato-chip-li.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="pytest,unittest">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些笔记">
+<meta property="og:url" content="https://potato-chip-li.github.io/2023/08/13/%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="POOL">
+<meta property="og:description" content="pytest,unittest">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-13T03:20:17.000Z">
+<meta property="article:modified_time" content="2023-10-20T08:19:52.309Z">
+<meta property="article:author" content="LI">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://potato-chip-li.github.io/2023/08/13/%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://potato-chip-li.github.io/2023/08/13/%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0/","path":"2023/08/13/一些笔记/","title":"一些笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>一些笔记 | POOL</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <a target="_blank" rel="noopener" href="https://github.com/potato-chip-li" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">POOL</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">welcome</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a></li><li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E5%8D%8F%E7%A8%8B%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">进程、线程、协程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95"><span class="nav-number">2.</span> <span class="nav-text">弱网测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88"><span class="nav-number">2.1.</span> <span class="nav-text">为什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95%E6%8C%87%E6%A0%87"><span class="nav-number">2.2.</span> <span class="nav-text">弱网测试指标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="nav-number">3.</span> <span class="nav-text">性能测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-number">3.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E6%8C%87%E6%A0%87"><span class="nav-number">3.2.</span> <span class="nav-text">常见指标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%88%B0%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E9%9C%80%E8%80%83%E8%99%91"><span class="nav-number">4.</span> <span class="nav-text">从需求分析到设计测试用例需考虑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E3%80%81%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95%E3%80%81%E7%B3%BB%E7%BB%9F%E6%B5%8B%E8%AF%95%E3%80%81%E9%AA%8C%E6%94%B6%E6%B5%8B%E8%AF%95%E3%80%81%E5%9B%9E%E5%BD%92%E6%B5%8B%E8%AF%95"><span class="nav-number">5.</span> <span class="nav-text">单元测试、集成测试、系统测试、验收测试、回归测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E7%94%A8%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E5%85%AB%E8%A6%81%E7%B4%A0"><span class="nav-number">6.</span> <span class="nav-text">通用测试用例八要素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95"><span class="nav-number">7.</span> <span class="nav-text">黑盒测试方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E6%80%A7%E6%B5%8B%E8%AF%95"><span class="nav-number">8.</span> <span class="nav-text">安全性测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%8A%9F%E8%83%BD%E6%96%B9%E9%9D%A2%E7%9C%8B%EF%BC%8CCPU%E5%A4%A7%E8%87%B4%E5%8F%AF%E5%88%86%E4%B8%BA%E5%A6%82%E4%B8%8B%E5%85%AB%E4%B8%AA%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83"><span class="nav-number">9.</span> <span class="nav-text">从实现的功能方面看，CPU大致可分为如下八个逻辑单元</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#redis"><span class="nav-number">10.</span> <span class="nav-text">redis</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9"><span class="nav-number">10.1.</span> <span class="nav-text">缓存雪崩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF"><span class="nav-number">10.2.</span> <span class="nav-text">缓存击穿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F"><span class="nav-number">10.3.</span> <span class="nav-text">缓存穿透</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LI"
+      src="/images/avatar-1.jpg">
+  <p class="site-author-name" itemprop="name">LI</p>
+  <div class="site-description" itemprop="description">let's go fishing</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/potato-chip-li" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;potato-chip-li" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:potato_chip_li@gmail.com" title="E-Mail → mailto:potato_chip_li@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://potato-chip-li.github.io/2023/08/13/%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar-1.jpg">
+      <meta itemprop="name" content="LI">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="POOL">
+      <meta itemprop="description" content="let's go fishing">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="一些笔记 | POOL">
+      <meta itemprop="description" content="pytest,unittest">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          一些笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-08-13 11:20:17" itemprop="dateCreated datePublished" datetime="2023-08-13T11:20:17+08:00">2023-08-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-10-20 16:19:52" itemprop="dateModified" datetime="2023-10-20T16:19:52+08:00">2023-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description">pytest,unittest</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="进程、线程、协程："><a href="#进程、线程、协程：" class="headerlink" title="进程、线程、协程："></a>进程、线程、协程：</h3><ul>
+<li>进程：是并发执行的程序在执行过程中分配和管理资源的基本单位，是一个动态概念，竞争计算机系统资源的基本单位，进程之间是独立的地址空间。</li>
+<li>线程：是进程的一个执行单元，是进程内调度实体，是被系统独立调度和分派的基本单位，线程自己不拥有系统资源，只拥有一点在运行中必不可少的资源，线程共享本进程的地址空间。</li>
+<li>协程：是一种比线程更加轻量级的存在。一个线程也可以拥有多个协程。其执行过程更类似于子例程，或者说不带返回值的函数调用。</li>
+</ul>
+<h3 id="弱网测试"><a href="#弱网测试" class="headerlink" title="弱网测试"></a>弱网测试</h3><p>弱网测试，属于健壮性测试范畴。</p>
+<h4 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h4><ol>
+<li>用户体验。app使用过程中，弱网的高延迟和高丢包，在实时性要求非常高的场景，容易损失用户体验。</li>
+<li>非正常情况下，出现bug概率会增加。在日常需求中，经常会遇到一些用户反馈一些无法简单复现的bug，有很大一部分的bug是由于用户自身的网络环境波动，或者是本身网络环境就较为恶劣。而服务面对这种恶劣的网络环境的健壮性不够，导致会出现一些意想不到的bug。</li>
+</ol>
+<h4 id="弱网测试指标"><a href="#弱网测试指标" class="headerlink" title="弱网测试指标"></a>弱网测试指标</h4><ol>
+<li>带宽（吞吐量）：单位时间内传输的数据量，单位通常是：每秒比特数：bps。带宽反映了网络的传输能力，越大越好。</li>
+<li>丢包：数据丢包个数&#x3D;发送的数据包数-接收的数据包数。丢包反映了网络可靠性，越小越好。</li>
+<li>时延：数据包从发送开始到接收到该数据，所耗费的时间，单位通常是ms。时延反映了网络的速度，越小越好。</li>
+<li>抖动：指时延的变化，即两个数据包时延的差值。抖动反映了网络的稳定性，越小越好。</li>
+<li>乱序：指接收到的数据包顺序和发送顺序不一致的次数。乱序反映了网络的稳定性，越小越好。当乱序比较严重的时候，丢包也会比较严重，所以一般都以丢包指标为主，忽略乱序指标。</li>
+</ol>
+<h3 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h3><p>性能测试是通过自动化的测试工具模拟多种正常峰值及异常负载条件来对系统的各项性能指标进行测试。</p>
+<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ol>
+<li>负载测试（Load Testing）:负载测试是指通过测试系统在资源超负荷情况下的表现，来发现设计上的错误或验证系统的负载能力。这种测试中，将使测试对象承担不同的工作量，以评测和评估测试对象在不同工作量条件下的性能行为，以及持续正常运行的能力。负载测试的目标是确定并确保系统在超出最大预期工作量的情况下仍能正常运行。此外，负载测试还要评估性能特征，如响应时长、事物处理速度和其他与时间相关的性能指标。</li>
+<li>压力测试（Stress Testing）：在软件工程中，压力测试是对系统不断施加压力的测试，是通过确定一个系统的瓶颈或者不能接受的性能点，来获得系统能提供的最大服务级别的测试。例如测试一个Web站点在大量的负荷下，何时系统的响应会退化或失败。</li>
+<li>容量测试（Volume Testing）：容量测试确定系统可处理同时在线的最大用户数。</li>
+</ol>
+<h4 id="常见指标"><a href="#常见指标" class="headerlink" title="常见指标"></a>常见指标</h4><p>系统测试</p>
+<ol>
+<li>响应时间</li>
+<li>并发</li>
+<li>点击量&#x2F;点击率</li>
+<li>吞吐量&#x2F;吞吐率</li>
+<li>TPS&#x2F;QPS（Transactions Per Second 每秒事务数&#x2F;Queries Per Second 每秒查询率）</li>
+<li>PV&#x2F;UV（Unique visitor 用户访问&#x2F;Page View 页面浏览量或点击量）</li>
+</ol>
+<p>对于C&#x2F;S架构的程序，由于软件后台通常为数据库，所以我们更注意数据库的测试指标。</p>
+<ol>
+<li>User Connections：用户连接数，也就是数据库的连接数量</li>
+<li>Number of Deadlocks：数据库死锁</li>
+<li>Butter Cache Hit :数据库Cache的命中情况</li>
+</ol>
+<p>对于服务器，还有</p>
+<ol>
+<li>CPU使用率</li>
+<li>内存占用率</li>
+<li>磁盘IO</li>
+<li>系统平均负载</li>
+</ol>
+<h3 id="从需求分析到设计测试用例需考虑"><a href="#从需求分析到设计测试用例需考虑" class="headerlink" title="从需求分析到设计测试用例需考虑"></a>从需求分析到设计测试用例需考虑</h3><ol>
+<li>理解需求</li>
+<li>需求分析<ol>
+<li>寻找关键词</li>
+<li>寻找影响因素</li>
+<li>寻找检查项</li>
+<li>输出用例场景</li>
+</ol>
+</li>
+<li>收集反馈</li>
+</ol>
+<h3 id="单元测试、集成测试、系统测试、验收测试、回归测试"><a href="#单元测试、集成测试、系统测试、验收测试、回归测试" class="headerlink" title="单元测试、集成测试、系统测试、验收测试、回归测试"></a>单元测试、集成测试、系统测试、验收测试、回归测试</h3><ol>
+<li>单元测试：单元测试又称模块测试，是就是对程序代码中最小的涉及模块单元进行测试。目的是检测软件模块单元的正确性。</li>
+<li>集成测试：集成测试又称组装测试，是将软件产品各个模块组装起来，目的是检验软件接口中是否正确性，以及组装后的整体功能、性能表现。</li>
+<li>系统测试：系统测试是对已经集成的好的系统进行彻底的测试，以验证软件系统的正确性和性能是否满足其所指定的要求。</li>
+<li>验收测试：验收测试是部署软件的最后的一个测试操作，验收测测试的目的是确保软件的准备就绪，向软件购买展示软件系统满足其用户的需求。</li>
+<li>回归测试：回归测试是指在发生修改之后重新测试先前的测试用例以保证修改的正确性。</li>
+</ol>
+<h3 id="通用测试用例八要素"><a href="#通用测试用例八要素" class="headerlink" title="通用测试用例八要素"></a>通用测试用例八要素</h3><ol>
+<li>用例编号</li>
+<li>测试项目</li>
+<li>测试标题</li>
+<li>重要级别</li>
+<li>预置条件</li>
+<li>测试输入 　　</li>
+<li>操作步骤</li>
+<li>预期输出</li>
+</ol>
+<h3 id="黑盒测试方法"><a href="#黑盒测试方法" class="headerlink" title="黑盒测试方法"></a>黑盒测试方法</h3><ol>
+<li>等价类划分</li>
+<li>边界值分析</li>
+<li>错误推测</li>
+<li>因果图分析</li>
+<li>判定表驱动分析</li>
+<li>正交表驱动分析</li>
+<li>功能图分析</li>
+<li>场景设计</li>
+</ol>
+<h3 id="安全性测试"><a href="#安全性测试" class="headerlink" title="安全性测试"></a>安全性测试</h3><ol>
+<li>静态代码审查</li>
+<li>动态渗透测试</li>
+<li>扫描程序中的数据<br>从用户认证、网络、数据库和Web 四个角度进行安全性测试，需要注意以下几个方面：</li>
+<li>用户认证安全性测试</li>
+<li>网络安全性测试</li>
+<li>数据库安全性测试</li>
+<li>Web 安全性测试</li>
+</ol>
+<h3 id="从实现的功能方面看，CPU大致可分为如下八个逻辑单元"><a href="#从实现的功能方面看，CPU大致可分为如下八个逻辑单元" class="headerlink" title="从实现的功能方面看，CPU大致可分为如下八个逻辑单元"></a>从实现的功能方面看，CPU大致可分为如下八个逻辑单元</h3><ol>
+<li>指令高速缓存，俗称指令寄存器</li>
+<li>译码单元，俗称指令译码器</li>
+<li>控制单元</li>
+<li>寄存器</li>
+<li>逻辑运算单元（ALU）</li>
+<li>预取单元</li>
+<li>总线单元</li>
+<li>数据高速缓存<br>在CPU中至少要有六类寄存器：指令寄存器（IR）、程序计数器（PC）、地址寄存器（AR）、数据寄存器（DR）、累加寄存器（AC）、程序状态字寄存器（PSW）</li>
+</ol>
+<h3 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h3><p>Redis全称为Remote Dictionary Server（远程数据服务），是一款开源的基于内存的键值对存储系统，其主要被用作高性能缓存服务器使用，当然也可以作为消息中间件和Session共享等。Redis独特的键值对模型使之支持丰富的数据结构类型，即它的值可以是字符串、哈希、列表、集合、有序集合，而不像Memcached要求的键和值都是字符串。同时由于Redis是基于内存的方式，免去了磁盘I&#x2F;O速度的影响，因此其读写性能极高</p>
+<h4 id="缓存雪崩"><a href="#缓存雪崩" class="headerlink" title="缓存雪崩"></a>缓存雪崩</h4><p>当某一个时刻出现大规模的缓存失效的情况，那么就会导致大量的请求直接打在数据库上面，导致数据库压力巨大，如果在高并发的情况下，可能瞬间就会导致数据库宕机。这时候如果运维马上又重启数据库，马上又会有新的流量把数据库打死。</p>
+<h4 id="缓存击穿"><a href="#缓存击穿" class="headerlink" title="缓存击穿"></a>缓存击穿</h4><p>其实跟缓存雪崩有点类似，缓存雪崩是大规模的key失效，而缓存击穿是一个热点的Key，有大并发集中对其进行访问，突然间这个Key失效了，导致大并发全部打在数据库上，导致数据库压力剧增。这种现象就叫做缓存击穿。</p>
+<h4 id="缓存穿透"><a href="#缓存穿透" class="headerlink" title="缓存穿透"></a>缓存穿透</h4><p>我们使用Redis大部分情况都是通过Key查询对应的值，假如发送的请求传进来的key是不存在Redis中的，那么就查不到缓存，查不到缓存就会去数据库查询。假如有大量这样的请求，这些请求像“穿透”了缓存一样直接打在数据库上，这种现象就叫做缓存穿透。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/07/26/%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0/" rel="prev" title="测试学习">
+                  <i class="fa fa-chevron-left"></i> 测试学习
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+   
+
+<script src="https://unpkg.com/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '48px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>
