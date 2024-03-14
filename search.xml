@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>blog优化-1</title>
-    <url>/2023/07/21/blog%E4%BC%98%E5%8C%96-1/</url>
+    <url>/2023/07/21/4-blog%E4%BC%98%E5%8C%96-1/</url>
     <content><![CDATA[<h3 id="添加搜索功能"><a href="#添加搜索功能" class="headerlink" title="添加搜索功能"></a>添加搜索功能</h3><p>安装<font color="blue" size=2>hexo-generator-searchdb</font> 插件</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
 <p>在hexo的<font color="blue" size=2>_config.yml</font>的底部添加如下设置</p>
@@ -41,38 +41,8 @@
       </tags>
   </entry>
   <entry>
-    <title>blog创建</title>
-    <url>/2023/07/14/blog%E5%88%9B%E5%BB%BA/</url>
-    <content><![CDATA[<h3 id="打开下载好的theme下的config文件，关闭注释"><a href="#打开下载好的theme下的config文件，关闭注释" class="headerlink" title="打开下载好的theme下的config文件，关闭注释"></a>打开下载好的theme下的config文件，关闭注释</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap  # 站点地址</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat    # 公共福利</span></span><br></pre></td></tr></table></figure>
-<h3 id="用git-bash打开文件夹myblog输入"><a href="#用git-bash打开文件夹myblog输入" class="headerlink" title="用git bash打开文件夹myblog输入:"></a>用git bash打开文件夹myblog输入:</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page about                        <span class="comment"># 要与上述命名一致</span></span><br><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page schedule</span><br></pre></td></tr></table></figure>
-<p>即在source文件夹下创建了对应的md文件</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-        <category>next</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>myfirstblog</title>
-    <url>/2023/07/11/myfirstblog/</url>
-    <content><![CDATA[<p>Hello world! This is my first blog.</p>
-<h1 id="该博客主题为hexo的next主题"><a href="#该博客主题为hexo的next主题" class="headerlink" title="该博客主题为hexo的next主题"></a>该博客主题为hexo的next主题</h1><h2 id="创建过程"><a href="#创建过程" class="headerlink" title="创建过程"></a>创建过程</h2><h3 id="下载好git-node后"><a href="#下载好git-node后" class="headerlink" title="下载好git,node后"></a>下载好git,node后</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init myblog</span><br><span class="line">$ <span class="built_in">cd</span> myblog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo s                       <span class="comment"># 查看网页</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-next  <span class="comment"># 下载主题</span></span><br></pre></td></tr></table></figure>
-<h3 id="打开config文件-修改主题"><a href="#打开config文件-修改主题" class="headerlink" title="打开config文件,修改主题"></a>打开config文件,修改主题</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机网络笔记</title>
-    <url>/2023/07/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/</url>
+    <url>/2023/07/19/2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h2><p>速率、带宽、吞吐量、时延、时延带宽积、往返时间、利用率、丢包率</p>
 <h2 id="体系结构"><a href="#体系结构" class="headerlink" title="体系结构"></a>体系结构</h2><p>应用层、运输层、网际层、网络接口层（数据链路层、物理层）</p>
 <h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><h3 id="传输媒体"><a href="#传输媒体" class="headerlink" title="传输媒体"></a>传输媒体</h3><ul>
@@ -190,47 +160,38 @@
       </tags>
   </entry>
   <entry>
-    <title>测试学习</title>
-    <url>/2023/07/26/%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>用来促进鉴定软 件的正确性、完整性、安全性和质量的过程；<br>是一种实际输出与预期输出间的审核或者比较过程；<br>使用人工和自动手段来运行或测试某个系统的过程，其目的在于检验它是否满足规定的需求或是弄清预期结果与实际结果之间的差别；</p>
-<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
-<li>阶段：单元测试、集成测试、系统测试、验收测试、回归测试、Alpha测试、Beta测试</li>
-<li>程序运行状态：静态测试、动态测试</li>
-<li>方法：白盒测试、黑盒测试、灰盒测试</li>
-<li>服务类型：移动端、PC端、B&#x2F;S、C&#x2F;S</li>
-<li>内容：功能测试、负载测试、压力测试、性能测试、大数据测试、易用性测试、安装测试、恢复测试、安全性测试、兼容性测试、内存泄漏测试、比较测试、可靠性测试、文档测试</li>
-</ul>
-<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ul>
-<li>需求分析和评审</li>
-<li>编写测试计划</li>
-<li>编写测试用例并进行评审</li>
-<li>执行测试、提交bug、回归测试</li>
-<li>编写测试总结报告</li>
-</ul>
-<h2 id="测试用例的设计"><a href="#测试用例的设计" class="headerlink" title="测试用例的设计"></a>测试用例的设计</h2><p>等价类划分，边界值分析，因果图，判定表，正交表，场景法，错误分析，错误推断</p>
-<h2 id="测试用例编写"><a href="#测试用例编写" class="headerlink" title="测试用例编写"></a>测试用例编写</h2><ul>
-<li>需求分析和评审</li>
-<li>编写测试用例</li>
-<li>测试用例评审</li>
-<li>执行测试用例，提交缺陷报告，bug处理好后进行回归测试</li>
-<li>编写测试报告，对产品进行评估</li>
-</ul>
-<h2 id="测试报告"><a href="#测试报告" class="headerlink" title="测试报告"></a>测试报告</h2><p>用例编号，用例标题，测试项目，优先度，前置条件，测试输入，执行步骤，预期结果······</p>
-<h2 id="缺陷报告"><a href="#缺陷报告" class="headerlink" title="缺陷报告"></a>缺陷报告</h2><p>缺陷编号，缺陷标题，缺陷的严重程度，缺陷的优先级，缺陷所属模块，缺陷详细描述，缺陷记录人，缺陷处理人······</p>
-<h2 id="缺陷状态"><a href="#缺陷状态" class="headerlink" title="缺陷状态"></a>缺陷状态</h2><p>new,assigned,open,fixed,closed,reopen(回归测试失败，再次打开),postpone,duplicate(与提交的Defect重复),reject </p>
-<h2 id="Python包"><a href="#Python包" class="headerlink" title="Python包"></a>Python包</h2><p>selenium，appium，pytest，unitest</p>
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>postman，JMeter，禅道</p>
+    <title>myfirstblog</title>
+    <url>/2023/07/11/1-myfirstblog/</url>
+    <content><![CDATA[<p>Hello world! This is my first blog.</p>
+<h1 id="该博客主题为hexo的next主题"><a href="#该博客主题为hexo的next主题" class="headerlink" title="该博客主题为hexo的next主题"></a>该博客主题为hexo的next主题</h1><h2 id="创建过程"><a href="#创建过程" class="headerlink" title="创建过程"></a>创建过程</h2><h3 id="下载好git-node后"><a href="#下载好git-node后" class="headerlink" title="下载好git,node后"></a>下载好git,node后</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init myblog</span><br><span class="line">$ <span class="built_in">cd</span> myblog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo s                       <span class="comment"># 查看网页</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-theme-next  <span class="comment"># 下载主题</span></span><br></pre></td></tr></table></figure>
+<h3 id="打开config文件-修改主题"><a href="#打开config文件-修改主题" class="headerlink" title="打开config文件,修改主题"></a>打开config文件,修改主题</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>hexo</category>
       </categories>
       <tags>
-        <tag>测试</tag>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>blog创建</title>
+    <url>/2023/07/14/3-blog%E5%88%9B%E5%BB%BA/</url>
+    <content><![CDATA[<h3 id="打开下载好的theme下的config文件，关闭注释"><a href="#打开下载好的theme下的config文件，关闭注释" class="headerlink" title="打开下载好的theme下的config文件，关闭注释"></a>打开下载好的theme下的config文件，关闭注释</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap  # 站点地址</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat    # 公共福利</span></span><br></pre></td></tr></table></figure>
+<h3 id="用git-bash打开文件夹myblog输入"><a href="#用git-bash打开文件夹myblog输入" class="headerlink" title="用git bash打开文件夹myblog输入:"></a>用git bash打开文件夹myblog输入:</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page about                        <span class="comment"># 要与上述命名一致</span></span><br><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page schedule</span><br></pre></td></tr></table></figure>
+<p>即在source文件夹下创建了对应的md文件</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+        <category>next</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
     <title>一些笔记</title>
-    <url>/2023/08/13/%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0/</url>
+    <url>/2023/08/13/6-%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h3 id="进程、线程、协程："><a href="#进程、线程、协程：" class="headerlink" title="进程、线程、协程："></a>进程、线程、协程：</h3><ul>
 <li>进程：是并发执行的程序在执行过程中分配和管理资源的基本单位，是一个动态概念，竞争计算机系统资源的基本单位，进程之间是独立的地址空间。</li>
 <li>线程：是进程的一个执行单元，是进程内调度实体，是被系统独立调度和分派的基本单位，线程自己不拥有系统资源，只拥有一点在运行中必不可少的资源，线程共享本进程的地址空间。</li>
@@ -343,6 +304,95 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows+centos7双系统安装</title>
+    <url>/2024/02/23/windows+centos7%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="参考视频与博客"><a href="#参考视频与博客" class="headerlink" title="参考视频与博客"></a>参考视频与博客</h2><p>Windows 和 Ubuntu 双系统的安装和卸载：<a href="https://www.bilibili.com/video/BV1554y1n7zv">https://www.bilibili.com/video/BV1554y1n7zv</a></p>
+<p>视频是Ubuntu的安装，前面步骤可供参考，后面步骤不同</p>
+<p>Win10+Linux(CentOS) 双系统安装教程–踩坑实录：<a href="https://www.cnblogs.com/salmonLeeson/p/11438062.html">https://www.cnblogs.com/salmonLeeson/p/11438062.html</a></p>
+<p>博客园大佬的安装教程</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>系统安装</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql配置笔记</title>
+    <url>/2024/02/07/7-%E5%9B%BE%E4%B9%A6%E9%A1%B9%E7%9B%AEMySQL%E9%85%8D%E7%BD%AE%C2%B7/</url>
+    <content><![CDATA[<h2 id="虚拟机centos7下载MySQL"><a href="#虚拟机centos7下载MySQL" class="headerlink" title="虚拟机centos7下载MySQL"></a>虚拟机centos7下载MySQL</h2><h3 id="安装参考过程：https-zhuanlan-zhihu-com-p-623778183"><a href="#安装参考过程：https-zhuanlan-zhihu-com-p-623778183" class="headerlink" title="安装参考过程：https://zhuanlan.zhihu.com/p/623778183"></a>安装参考过程：<a href="https://zhuanlan.zhihu.com/p/623778183">https://zhuanlan.zhihu.com/p/623778183</a></h3><h3 id="项目建表sql"><a href="#项目建表sql" class="headerlink" title="项目建表sql"></a>项目建表sql</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> book_manage;</span><br><span class="line">use book_manage;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span> <span class="number">1.</span>book表</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `book`(</span><br><span class="line"> `id` <span class="type">int</span> unsigned auto_increment,</span><br><span class="line">`bookname` <span class="type">varchar</span>(<span class="number">100</span>) <span class="keyword">not</span> <span class="keyword">null</span>,</span><br><span class="line">`author` <span class="type">varchar</span>(<span class="number">100</span>),</span><br><span class="line">`typename` <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="keyword">null</span>,</span><br><span class="line">`remarks` <span class="type">varchar</span>(<span class="number">500</span>),</span><br><span class="line"> <span class="keyword">PRIMARY</span> KEY ( `id` )</span><br><span class="line">);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> book(bookname,author,typename,remarks,isborrow) <span class="keyword">values</span> (<span class="string">&#x27;老人与海&#x27;</span>,<span class="string">&#x27;海明威&#x27;</span>,<span class="string">&#x27;文学小说&#x27;</span>,<span class="string">&#x27;一个老人捕鱼的故事&#x27;</span>);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> book(bookname,author,typename,remarks,isborrow) <span class="keyword">values</span> (<span class="string">&#x27;老人与海&#x27;</span>,<span class="string">&#x27;海明威&#x27;</span>,<span class="string">&#x27;文学小说&#x27;</span>,<span class="string">&#x27;一个老人捕鱼的故事&#x27;</span>);</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> <span class="number">2.</span><span class="keyword">user</span>表</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `<span class="keyword">user</span>`(</span><br><span class="line"> `id` <span class="type">int</span> unsigned auto_increment,</span><br><span class="line">`username` <span class="type">varchar</span>(<span class="number">100</span>) <span class="keyword">not</span> <span class="keyword">null</span>,</span><br><span class="line">`password` <span class="type">varchar</span>(<span class="number">100</span>),</span><br><span class="line"><span class="keyword">PRIMARY</span> KEY ( `id` )</span><br><span class="line">);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">user</span>(username,password) <span class="keyword">values</span>(<span class="string">&#x27;admin&#x27;</span>,<span class="string">&#x27;123456&#x27;</span>);</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> <span class="number">3.</span>stu表</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> `stu`(</span><br><span class="line">`id` <span class="type">int</span> unsigned auto_increment,</span><br><span class="line">`book_id` <span class="type">int</span> unsigned <span class="keyword">not</span> <span class="keyword">null</span>,</span><br><span class="line">`stu_num` <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="keyword">null</span>,</span><br><span class="line">`stu_name` <span class="type">varchar</span>(<span class="number">100</span>),</span><br><span class="line">`start_time` datetime(<span class="number">0</span>) <span class="keyword">null</span> <span class="keyword">default</span> <span class="built_in">current_timestamp</span>(<span class="number">0</span>) comment <span class="string">&#x27;借书时间&#x27;</span>,</span><br><span class="line">`end_time`  datetime(<span class="number">0</span>) <span class="keyword">default</span> <span class="keyword">null</span> <span class="keyword">on</span> <span class="keyword">update</span> <span class="built_in">current_timestamp</span>(<span class="number">0</span>) comment <span class="string">&#x27;还书时间&#x27;</span>,</span><br><span class="line">`isborrow`  tinyint(<span class="number">2</span>) <span class="keyword">not</span> <span class="keyword">null</span>,</span><br><span class="line"> <span class="keyword">PRIMARY</span> KEY ( `id`)</span><br><span class="line">);</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> stu(book_id,stu_num,stu_name,isborrow) <span class="keyword">values</span>(<span class="number">1</span>,<span class="string">&#x27;101&#x27;</span>,<span class="string">&#x27;麻花&#x27;</span>,<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="MySQL权限设置"><a href="#MySQL权限设置" class="headerlink" title="MySQL权限设置"></a>MySQL权限设置</h2><p>使用本机的MySQL workbench发现无法连接上数据库</p>
+<h3 id="为root授予-权限"><a href="#为root授予-权限" class="headerlink" title="为root授予%权限"></a>为root授予%权限</h3><p>host字段： 表示账号可以在哪些主机或IP地址登录。% 代表任何IP地址都可以登录（生产环境中这样做是非常危险的），localhost 表示只允许本机登录。</p>
+<ul>
+<li>将 host 设为 %，就代表任何IP地址都可以访问该数据库，在生产环境中这样做是非常危险的。</li>
+<li>也可以使用其他手段来提高数据库安全性：比如设置防火墙、iptable；如果是云平台的数据库还可以通过安全组等方式提高安全性。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">use mysql;</span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> host <span class="operator">=</span> <span class="string">&#x27;%&#x27;</span> <span class="keyword">where</span> host <span class="operator">=</span> <span class="string">&#x27;localhost&#x27;</span>;</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">// 停止</span><br><span class="line">systemctl stop firewalld;</span><br><span class="line">// 查看状态</span><br><span class="line">systemctl status firewalld;</span><br><span class="line">// 关闭开机自启</span><br><span class="line">systemctl disable firewalld;</span><br><span class="line">// 通过配置iptables解决的方法更好，在这不做陈述</span><br></pre></td></tr></table></figure>
+<p>再次使用workbench时连接成功</p>
+<h2 id="node-js连接mysql出现错误"><a href="#node-js连接mysql出现错误" class="headerlink" title="node.js连接mysql出现错误"></a>node.js连接mysql出现错误</h2><h3 id="参考解决过程：https-zhuanlan-zhihu-com-p-642697507"><a href="#参考解决过程：https-zhuanlan-zhihu-com-p-642697507" class="headerlink" title="参考解决过程：https://zhuanlan.zhihu.com/p/642697507"></a>参考解决过程：<a href="https://zhuanlan.zhihu.com/p/642697507">https://zhuanlan.zhihu.com/p/642697507</a></h3><p>上面过程说明数据库可以远程连接，但nodejs还是无法连接上，报错内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; </span><br><span class="line">consider upgrading MySQL client</span><br></pre></td></tr></table></figure>
+<p>解决方法如下：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;%&#x27;</span> IDENTIFIED <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> <span class="string">&#x27;your password&#x27;</span>;</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 是将用户的身份验证方式修改为 `mysql_native_password` 插件，这是一个旧版本的插件，</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span> 较新的 MySQL 客户端通常都支持这种方式。该插件使用经典的用户名<span class="operator">/</span>密码方式进行身份验证。</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试学习</title>
+    <url>/2023/07/26/5-%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>用来促进鉴定软 件的正确性、完整性、安全性和质量的过程；<br>是一种实际输出与预期输出间的审核或者比较过程；<br>使用人工和自动手段来运行或测试某个系统的过程，其目的在于检验它是否满足规定的需求或是弄清预期结果与实际结果之间的差别；</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
+<li>阶段：单元测试、集成测试、系统测试、验收测试、回归测试、Alpha测试、Beta测试</li>
+<li>程序运行状态：静态测试、动态测试</li>
+<li>方法：白盒测试、黑盒测试、灰盒测试</li>
+<li>服务类型：移动端、PC端、B&#x2F;S、C&#x2F;S</li>
+<li>内容：功能测试、负载测试、压力测试、性能测试、大数据测试、易用性测试、安装测试、恢复测试、安全性测试、兼容性测试、内存泄漏测试、比较测试、可靠性测试、文档测试</li>
+</ul>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ul>
+<li>需求分析和评审</li>
+<li>编写测试计划</li>
+<li>编写测试用例并进行评审</li>
+<li>执行测试、提交bug、回归测试</li>
+<li>编写测试总结报告</li>
+</ul>
+<h2 id="测试用例的设计"><a href="#测试用例的设计" class="headerlink" title="测试用例的设计"></a>测试用例的设计</h2><p>等价类划分，边界值分析，因果图，判定表，正交表，场景法，错误分析，错误推断</p>
+<h2 id="测试用例编写"><a href="#测试用例编写" class="headerlink" title="测试用例编写"></a>测试用例编写</h2><ul>
+<li>需求分析和评审</li>
+<li>编写测试用例</li>
+<li>测试用例评审</li>
+<li>执行测试用例，提交缺陷报告，bug处理好后进行回归测试</li>
+<li>编写测试报告，对产品进行评估</li>
+</ul>
+<h2 id="测试报告"><a href="#测试报告" class="headerlink" title="测试报告"></a>测试报告</h2><p>用例编号，用例标题，测试项目，优先度，前置条件，测试输入，执行步骤，预期结果······</p>
+<h2 id="缺陷报告"><a href="#缺陷报告" class="headerlink" title="缺陷报告"></a>缺陷报告</h2><p>缺陷编号，缺陷标题，缺陷的严重程度，缺陷的优先级，缺陷所属模块，缺陷详细描述，缺陷记录人，缺陷处理人······</p>
+<h2 id="缺陷状态"><a href="#缺陷状态" class="headerlink" title="缺陷状态"></a>缺陷状态</h2><p>new,assigned,open,fixed,closed,reopen(回归测试失败，再次打开),postpone,duplicate(与提交的Defect重复),reject </p>
+<h2 id="Python包"><a href="#Python包" class="headerlink" title="Python包"></a>Python包</h2><p>selenium，appium，pytest，unitest</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>postman，JMeter，禅道</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>

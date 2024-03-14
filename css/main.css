@@ -1559,8 +1559,9 @@ pre code {
   margin-top: 60px;
   margin-bottom: 60px;
   padding: 10px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.8);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.8);
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px rgba(202,203,203,0.8);
+  -moz-box-shadow: 5px 5px 5px rgba(202,203,204,0.8);
 }
 .use-motion .pagination,
 .use-motion .comments {
@@ -2582,7 +2583,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff74ff;
+  background: #ff1859;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2637,7 +2638,7 @@ header.header {
 .main-inner > .tabs-comment,
 .main-inner > .comments,
 .main-inner > .pagination {
-  background: rgba(233,233,233,0.45);
+  background: rgba(233,233,233,0.25);
 }
 body {
   color: #000;
